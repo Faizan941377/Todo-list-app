@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/colorBackBlue"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:id="@+id/tv_row_task"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="task"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/iv_row_task_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_icon"
+                android:padding="5dp"
+                android:layout_gravity="end|center"
+                android:layout_marginRight="8dp"
+                app:tint="@color/colorWhite"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

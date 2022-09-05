@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".task.UpdateTaskActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/iv_update_task_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:padding="5dp"
+            android:src="@drawable/back_icon" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_task"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_update_task"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/update_task"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/lightGray"
+            android:background="@drawable/et_border_round"/>
+
+        <LinearLayout
+            android:id="@+id/bt_update_task"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_ripple_effect_blue"
+            android:drawableStart="@drawable/add_icon"
+            android:gravity="center"
+            android:textAllCaps="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="@string/update_task"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
